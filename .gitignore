@@ -1,0 +1,9 @@
+node_modules/
+npm-debug.log*
+.DS_Store
+.env
+.env.*
+*.log
+
+# Do NOT ignore docs/data/*.json — those are committed by the scrape Action in
+# Mode B so GitHub Pages can serve fresh results. (wards.geojson is committed too.)
