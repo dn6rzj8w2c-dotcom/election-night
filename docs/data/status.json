@@ -1,0 +1,14 @@
+{
+  "lastFetchAt": "2026-07-30T01:59:13.264Z",
+  "lastFetchSuccess": true,
+  "source": "no-election-id",
+  "nextFetchAt": "2026-07-30T02:00:13.264Z",
+  "intervalSeconds": 60,
+  "staleAfterSeconds": 120,
+  "resultsLastUpdated": null,
+  "wardsReporting": 0,
+  "wardsTotal": 10,
+  "anyWardReporting": false,
+  "matchedWards": 0,
+  "unmatchedWards": []
+}

@@ -1,0 +1,448 @@
+{
+  "generatedAt": "2026-07-30T01:59:13.263Z",
+  "marginScale": {
+    "minMargin": 0.1,
+    "maxMargin": 0.5,
+    "minOpacity": 0.38,
+    "maxOpacity": 1,
+    "_margin_note": "Shared scale used for EVERY candidate (no per-candidate special casing). A ward won by <=10% renders at minOpacity (lightest tint); a ward won by >=50% renders at maxOpacity (full saturation). Linear in between."
+  },
+  "neutralWardColor": "#E3E3E3",
+  "election": {
+    "id": "REPLACE_WITH_AUG_11_2026_PRIMARY_ID",
+    "name": null,
+    "resultsLastUpdated": null
+  },
+  "race": {
+    "id": null,
+    "name": "Assembly District 76",
+    "precinctsReporting": 0,
+    "precinctsTotal": 10
+  },
+  "candidates": [
+    {
+      "name": "Dina Nina Martinez-Rutherford",
+      "color": "#56B4E9",
+      "fixed": true
+    },
+    {
+      "name": "Candidate 2",
+      "color": "#E69F00",
+      "fixed": false
+    },
+    {
+      "name": "Candidate 3",
+      "color": "#009E73",
+      "fixed": false
+    },
+    {
+      "name": "Candidate 4",
+      "color": "#CC79A7",
+      "fixed": false
+    },
+    {
+      "name": "Candidate 5",
+      "color": "#D55E00",
+      "fixed": false
+    }
+  ],
+  "wards": [
+    {
+      "name": "City of Madison Ward 34",
+      "alderDistrict": "6",
+      "municipality": "Madison",
+      "reporting": false,
+      "totalVotes": 0,
+      "results": [
+        {
+          "candidate": "Dina Nina Martinez-Rutherford",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 2",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 3",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 4",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 5",
+          "votes": null,
+          "share": null
+        }
+      ],
+      "leader": null,
+      "margin": null
+    },
+    {
+      "name": "City of Madison Ward 35",
+      "alderDistrict": "6",
+      "municipality": "Madison",
+      "reporting": false,
+      "totalVotes": 0,
+      "results": [
+        {
+          "candidate": "Dina Nina Martinez-Rutherford",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 2",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 3",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 4",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 5",
+          "votes": null,
+          "share": null
+        }
+      ],
+      "leader": null,
+      "margin": null
+    },
+    {
+      "name": "City of Madison Ward 36",
+      "alderDistrict": "6",
+      "municipality": "Madison",
+      "reporting": false,
+      "totalVotes": 0,
+      "results": [
+        {
+          "candidate": "Dina Nina Martinez-Rutherford",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 2",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 3",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 4",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 5",
+          "votes": null,
+          "share": null
+        }
+      ],
+      "leader": null,
+      "margin": null
+    },
+    {
+      "name": "City of Madison Ward 47",
+      "alderDistrict": "15",
+      "municipality": "Madison",
+      "reporting": false,
+      "totalVotes": 0,
+      "results": [
+        {
+          "candidate": "Dina Nina Martinez-Rutherford",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 2",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 3",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 4",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 5",
+          "votes": null,
+          "share": null
+        }
+      ],
+      "leader": null,
+      "margin": null
+    },
+    {
+      "name": "City of Madison Ward 48",
+      "alderDistrict": "15",
+      "municipality": "Madison",
+      "reporting": false,
+      "totalVotes": 0,
+      "results": [
+        {
+          "candidate": "Dina Nina Martinez-Rutherford",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 2",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 3",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 4",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 5",
+          "votes": null,
+          "share": null
+        }
+      ],
+      "leader": null,
+      "margin": null
+    },
+    {
+      "name": "City of Madison Ward 49",
+      "alderDistrict": "15",
+      "municipality": "Madison",
+      "reporting": false,
+      "totalVotes": 0,
+      "results": [
+        {
+          "candidate": "Dina Nina Martinez-Rutherford",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 2",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 3",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 4",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 5",
+          "votes": null,
+          "share": null
+        }
+      ],
+      "leader": null,
+      "margin": null
+    },
+    {
+      "name": "City of Madison Ward 88",
+      "alderDistrict": "16",
+      "municipality": "Madison",
+      "reporting": false,
+      "totalVotes": 0,
+      "results": [
+        {
+          "candidate": "Dina Nina Martinez-Rutherford",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 2",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 3",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 4",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 5",
+          "votes": null,
+          "share": null
+        }
+      ],
+      "leader": null,
+      "margin": null
+    },
+    {
+      "name": "City of Madison Ward 89",
+      "alderDistrict": "16",
+      "municipality": "Madison",
+      "reporting": false,
+      "totalVotes": 0,
+      "results": [
+        {
+          "candidate": "Dina Nina Martinez-Rutherford",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 2",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 3",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 4",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 5",
+          "votes": null,
+          "share": null
+        }
+      ],
+      "leader": null,
+      "margin": null
+    },
+    {
+      "name": "Town of Blooming Grove Ward 1",
+      "alderDistrict": null,
+      "municipality": "Blooming Grove",
+      "reporting": false,
+      "totalVotes": 0,
+      "results": [
+        {
+          "candidate": "Dina Nina Martinez-Rutherford",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 2",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 3",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 4",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 5",
+          "votes": null,
+          "share": null
+        }
+      ],
+      "leader": null,
+      "margin": null
+    },
+    {
+      "name": "Village of McFarland Ward 3",
+      "alderDistrict": null,
+      "municipality": "Mcfarland",
+      "reporting": false,
+      "totalVotes": 0,
+      "results": [
+        {
+          "candidate": "Dina Nina Martinez-Rutherford",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 2",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 3",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 4",
+          "votes": null,
+          "share": null
+        },
+        {
+          "candidate": "Candidate 5",
+          "votes": null,
+          "share": null
+        }
+      ],
+      "leader": null,
+      "margin": null
+    }
+  ],
+  "totals": {
+    "byCandidate": [
+      {
+        "candidate": "Dina Nina Martinez-Rutherford",
+        "votes": 0,
+        "share": 0
+      },
+      {
+        "candidate": "Candidate 2",
+        "votes": 0,
+        "share": 0
+      },
+      {
+        "candidate": "Candidate 3",
+        "votes": 0,
+        "share": 0
+      },
+      {
+        "candidate": "Candidate 4",
+        "votes": 0,
+        "share": 0
+      },
+      {
+        "candidate": "Candidate 5",
+        "votes": 0,
+        "share": 0
+      }
+    ],
+    "totalVotes": 0,
+    "wardsReporting": 0,
+    "wardsTotal": 10,
+    "leader": null
+  },
+  "meta": {
+    "anyWardReporting": false,
+    "source": "no-election-id"
+  }
+}

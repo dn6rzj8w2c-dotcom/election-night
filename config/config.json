@@ -1,0 +1,56 @@
+{
+  "_comment": "SINGLE SOURCE OF TRUTH for election-night config. Edit this, not the code. Both the scraper (server + GitHub Action) and the frontend read from here (the scraper bakes the relevant bits into data/results.json so the client only needs one fetch).",
+  "baseUrl": "https://elections.danecounty.gov",
+  "electionId": "REPLACE_WITH_AUG_11_2026_PRIMARY_ID",
+  "_electionId_note": "This will NOT exist until close to the election. Find it at https://elections.danecounty.gov/election-dates and paste the numeric id here. Do not guess.",
+  "raceId": null,
+  "_raceId_note": "Optional. If left null the scraper finds the race by matching raceNameMatch on the Election-Result page, then follows the 'Votes By Precinct' link to get the raceId automatically. You can hardcode it here once known to skip the discovery step.",
+  "raceNameMatch": "Assembly District 76",
+  "_raceNameMatch_note": "Case-insensitive substring used to find the AD76 Democratic primary row on the election results page.",
+  "polling": {
+    "idleIntervalSeconds": 60,
+    "activeIntervalSeconds": 15,
+    "_polling_note": "Poll every idleIntervalSeconds while EVERY tracked race shows 0 wards reporting. As soon as ANY ward reports, switch to activeIntervalSeconds. Both are hot-editable on election night."
+  },
+  "forceRefreshCooldownSeconds": 12,
+  "_forceRefresh_note": "Server ignores force-refresh calls that arrive within this many seconds of the last real fetch, so a crowd clicking the button does not hammer the county site.",
+  "staleAfterSeconds": 120,
+  "_stale_note": "If the last SUCCESSFUL fetch is older than this, the UI shows a 'stale data' warning.",
+  "scrapeRetry": {
+    "maxAttempts": 4,
+    "baseDelayMs": 1500,
+    "_retry_note": "Exponential backoff between attempts on a failed scrape. A failed scrape must never crash the poll loop or block the next scheduled attempt."
+  },
+  "candidates": {
+    "fixed": {
+      "Dina Nina Martinez-Rutherford": "#56B4E9"
+    },
+    "palette": [
+      "#E69F00",
+      "#009E73",
+      "#CC79A7",
+      "#D55E00"
+    ],
+    "knownCandidates": [
+      "Dina Nina Martinez-Rutherford"
+    ],
+    "_knownCandidates_note": "Optional. Put the confirmed ballot names here BEFORE election night so the legend/table show real names (not 'Candidate 2') during the opening-night empty state. Once live scraping starts, the scraped names take over. If fewer than 5 are listed, the rest render as placeholders until results arrive.",
+    "_candidates_note": "Okabe-Ito colorblind-safe palette (deuteranopia/protanopia/tritanopia). Dina is LOCKED to Sky Blue regardless of ballot order. Every OTHER candidate is assigned the next unused palette color in the order they appear in the scraped results. Yellow is intentionally omitted (poor contrast on dark). Changing the candidate list is a one-line edit here."
+  },
+  "marginScale": {
+    "minMargin": 0.1,
+    "maxMargin": 0.5,
+    "minOpacity": 0.38,
+    "maxOpacity": 1.0,
+    "_margin_note": "Shared scale used for EVERY candidate (no per-candidate special casing). A ward won by <=10% renders at minOpacity (lightest tint); a ward won by >=50% renders at maxOpacity (full saturation). Linear in between."
+  },
+  "neutralWardColor": "#E3E3E3",
+  "_neutral_note": "Fill for wards with no reported data yet. Distinct from the page background so ward boundaries stay visible on opening night.",
+  "gis": {
+    "boundaryLayerUrl": "REPLACE_WITH_ARCGIS_FEATURESERVER_QUERY_URL",
+    "wardNameField": "REPLACE_WITH_FIELD_NAME",
+    "alderDistrictField": "ALDER",
+    "whereClause": "1=1",
+    "_gis_note": "ArcGIS REST FeatureServer/MapServer layer query endpoint for Dane County ward/precinct boundaries, e.g. https://.../FeatureServer/0/query. Find it at https://gis-countyofdane.opendata.arcgis.com/. wardNameField is the attribute holding the ward label (e.g. LABEL, WARD, NAME) \u2014 if left as REPLACE_ the loader auto-detects a property matching /ward|label|name/. alderDistrictField is the Madison alder-district attribute (null-safe: non-Madison wards are left ungrouped by alder). whereClause optionally scopes the ArcGIS pull. fetchBoundaries.js pulls this once to docs/data/wards.geojson; you do NOT need it live on election night."
+  }
+}

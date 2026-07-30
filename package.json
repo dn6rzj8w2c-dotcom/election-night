@@ -1,0 +1,23 @@
+{
+  "name": "ad76-results-map",
+  "version": "1.0.0",
+  "description": "Live ward-level choropleth map + results table for the Wisconsin Assembly District 76 Democratic primary (Dane County, WI), August 11, 2026.",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "scrape": "node scraper/scrape.js",
+    "fetch-boundaries": "node scraper/fetchBoundaries.js",
+    "sample-boundaries": "node scraper/makeSampleBoundaries.js",
+    "test": "node scraper/test.js",
+    "server": "node server/server.js",
+    "serve-static": "node scraper/serveStatic.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "express": "^4.19.2"
+  },
+  "author": "",
+  "license": "MIT"
+}
